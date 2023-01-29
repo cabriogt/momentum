@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://kit.fontawesome.com/dca0e1a6ff.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Momentum App</title>
+  </head>
+
+  <body id="img">
+
+      <div class="grid-container">
+
+        <div class="grid-item">
+
+          <form id="login-form" class="hidden">
+            <label for="name">What is your name?</label>
+            <input type="text" placeholder="Enter your Name" maxlength="15" required/>
+            <button class="btn">LogIn</button>
+          </form>
+    
+          <h1 id="greeting" class="hidden"></h1>
+
+        </div>
+
+        <div class="grid-item">
+          <h2 id="clock">00:00:00</h2>
+        </div>
+
+        <div class="grid-item">
+
+          <div id="weather">
+            <span></span>
+            <span></span>
+          </div>
+
+        </div>
+
+        <div class="grid-item">
+          <ul id="todo-list"></ul>
+        </div>
+
+        <div class="grid-item">
+          <form id="todo-form">
+            <label for="todo">Write a To Do and Press Enter</label>
+            <br>
+            <input type="text" required placeholder="What are you going to do today?"/>
+          </form>
+
+        </div>
+        <div class="grid-item">
+
+        </div>
+
+        <div class="grid-item back">
+          
+            <h5>Select your Background</h5>
+
+            <ul class="wrapper">
+              <li class="icon france">
+                <span class="tooltip">France</span>
+                <span id="btn-1" >Fr</span>
+              </li>
+              <li class="icon canada">
+                <span class="tooltip">Canada</span>
+                <span id="btn-2">Ca</span>
+              </li>
+              <li class="icon egyp">
+                <span class="tooltip">Korea</span>
+                <span id="btn-3">Kr</span>
+              </li>
+              <li class="icon mx">
+                <span class="tooltip">Mexico</span>
+                <span id="btn-4">Mx</span>
+              </li>
+            </ul>
+          
+          
+        </div>
+
+        <div class="grid-item">
+          <div id="quote">
+            <span></span>
+            <br>
+            <span></span>
+          </div>
+          
+        </div>
+
+        <div class="grid-item">
+
+          <footer class="footer">
+            <p> Momentum &copy;2023 </p>
+          </footer> 
+          
+        </div>
+      </div>
+
+      <script src="js/background.js"></script>
+      <script src="js/greetings.js"></script>
+      <script src="js/clock.js"></script>
+      <script src="js/quotes.js"></script>
+      <script src="js/todo.js"></script>
+      <script src="js/weather.js"></script>
+
+  </body>
+
+
+</html>
